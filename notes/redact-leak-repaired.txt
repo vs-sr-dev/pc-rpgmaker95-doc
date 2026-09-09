@@ -1,0 +1,59 @@
+=== the leak in tools/redact.py, repaired
+
+Recorded by pc-rpgmaker2000-doc/docs/13 (correction 1) and again by
+pc-rpgmaker2003-doc/docs/12. The tool that exists to remove routable
+addresses carried a real one twice, in its own selftest fixtures, in
+a committed and published file. Nothing in this note reproduces it:
+the counts are the finding and the string is not.
+
+--- POSITIVE CONTROL: the new check against the version that was
+--- committed, which it must fail
+  address shapes in the OLD tools/redact.py   : 5
+  of those, NOT at a reserved domain          : 5
+  distinct routable addresses among them      : 4
+  the real one appeared                       : 2 times
+
+--- NEGATIVE CONTROL: the same check against the repaired file,
+--- which it must pass
+  address shapes now                          : 5
+  of those, NOT at a reserved domain          : 0
+  the five specimens, which are safe to print :
+      SOMEONE@EXAMPLE.INVALID
+      a@b.invalid
+      first.last+tag@sub.domain.example
+      someone@example.invalid
+      x@y.invalid
+
+--- over every tracked file in this repository
+  tracked files scanned                       : 576
+  address shapes found                        : 5
+  of those, NOT at a reserved domain          : 0
+
+--- what changed, and what deliberately did not
+  changed : the two fixtures holding the real address, the
+            high-byte fixture whose .zz is fictional but not
+            reserved, and one new check asserting that no address
+            in this file's own source is routable.
+  NOT changed : the module docstring. The rule this repository
+            argued is this repository's, and the amendments the
+            later objects added belong to their own documents.
+
+--- the selftest, run with PYTHONIOENCODING unset
+  an address is replaced and the count is 1            ok     ICQ UIN #2444691       E-mail: [e-mail redacted: see docs on the personal data]
+  the ICQ number beside it survives                    ok     
+  a project URL is NOT touched                         ok     
+  a company support line is NOT touched                ok     
+  the alias list is NOT touched                        ok     
+  the author's name is NOT touched                     ok     
+  a version string is NOT touched                      ok     
+  a path with an @-free colon is NOT touched           ok     
+  a@b.invalid is caught                                ok     
+  first.last+tag@sub.domain.example is caught          ok     
+  SOMEONE@EXAMPLE.INVALID is caught                    ok     
+  no address in this tool's own source is routable     ok     5 specimens, all reserved
+  a file with no address reports zero rather than one  ok     
+  high bytes either side of an address are preserved   ok     
+
+14 checks, 0 failures
+exit=0
+

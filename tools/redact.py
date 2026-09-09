@@ -81,7 +81,16 @@ def cmd_run(args):
 def cmd_selftest(args):
     checks = []
 
-    body = b"ICQ UIN #2444691       E-mail: bmv@mail.ru\n"
+    # This specimen used to be the real address this tool exists to
+    # remove. `pc-rpgmaker2000-doc/docs/13` found it here and
+    # `pc-rpgmaker2003-doc/docs/12` found it still here: the repository
+    # redacted the address from every chapter and left it written out
+    # twice inside the source of the tool that does the redacting -- a
+    # file which is committed and published. It is now `.invalid`, a
+    # top-level domain RFC 2606 reserves so that it can never resolve,
+    # and the check below asserts that no address in this file is
+    # anything else.
+    body = b"ICQ UIN #2444691       E-mail: someone@example.invalid\n"
     out, n = redact(body)
     checks.append(("an address is replaced and the count is 1",
                    n == 1 and b"@" not in out, out.decode("latin-1").strip()))
@@ -103,11 +112,27 @@ def cmd_selftest(args):
 
     # Things that must be caught, including shapes the object does not have.
     catches = [
-        b"a@b.io", b"first.last+tag@sub.domain.co.uk", b"BMV@MAIL.RU",
+        b"a@b.invalid", b"first.last+tag@sub.domain.example",
+        b"SOMEONE@EXAMPLE.INVALID",
     ]
     for text in catches:
         out, n = redact(text)
         checks.append(("%s is caught" % text.decode(), n == 1, ""))
+
+    # THE CHECK THAT WOULD HAVE CAUGHT THE LEAK. Every address-shaped
+    # string in this file's own source must sit in a domain that cannot
+    # resolve -- `.invalid` or `.example`, both reserved by RFC 2606 --
+    # so that the tool which removes contacts can never itself be the
+    # thing that publishes one.
+    src = open(os.path.abspath(__file__), "rb").read()
+    found = EMAIL.findall(src)
+    leaked = [a for a in found
+              if not a.lower().endswith((b".invalid", b".example"))]
+    checks.append(("no address in this tool's own source is routable",
+                   not leaked,
+                   "LEAKED: %s" % b", ".join(leaked).decode("latin-1")
+                   if leaked else "%d specimens, all reserved"
+                   % len(found)))
 
     # A file with nothing to redact must be reported as zero, not as success.
     out, n = redact(b"no contacts here at all")
@@ -115,7 +140,7 @@ def cmd_selftest(args):
                    n == 0, ""))
 
     # Bytes in, bytes out: high bytes must survive untouched.
-    high = bytes([0xE1, 0xE7, 0xA8]) + b" x@y.zz " + bytes([0xCD, 0xB3])
+    high = bytes([0xE1, 0xE7, 0xA8]) + b" x@y.invalid " + bytes([0xCD, 0xB3])
     out, n = redact(high)
     checks.append(("high bytes either side of an address are preserved",
                    n == 1 and out.startswith(bytes([0xE1, 0xE7, 0xA8]))
