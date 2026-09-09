@@ -87,13 +87,37 @@ brief does not give.
 Group5, and it is **ASCII's**, not InstallShield's — a different file from the
 44,928-byte `SETUP.EXE` beside it in the ZIP.
 
-**9. The sample game is in the object.**
+**9. The sample game is in the object, and the error has a known provenance.**
 `_pre/provenance.txt` states "It also ships a sample game, which is *not* part
 of this object and is not analysed here", and `_pre/question.txt` says whether
 any of the 256 entries is one "is a question the manifest can answer and nobody
 has asked it". The manifest answers yes: Groups 2, 3 and 4, nineteen files,
 3,210,511 expanded bytes ([05](05-the-product.md)). The first statement is an
 assertion the second one contradicts.
+
+**Where it came from is the useful part.** The abandonware page the object was
+downloaded from lists a *Sample game* as a separate item beside the package,
+and the owner reported that listing. **That observation is correct and it is
+about a catalogue, not about a file.** Both things can be true at once — the
+site may well offer some other sample project separately, and this package
+contains one anyway — so the premise was never wrong. What was wrong was the
+negation drawn from it.
+
+**A negative claim about contents cannot be derived from a positive claim about
+a distributor.** "There is a separate sample game" is a fact about a shop;
+"which is not part of this object" is a fact about 6,607,311 bytes, and only the
+bytes can settle it. This collection already applies exactly that rule to Steam:
+an `appmanifest` says what the shop delivers and the files say what is there.
+Here the shop was an abandonware index and it beat the object's own manifest for
+a whole session, over a question that was one `awk` away in a file that had
+already been walked end to end.
+
+**The prescription is a label, not more work.** A pre-briefing carries the
+owner's framing and that framing is load-bearing — two of this owner's three
+statements are confirmed by the bytes, one of them three times over
+([08](08-the-text.md)). What it lacks is a mark separating *what is known about
+the object* from *what is known about where the object came from*, because the
+two arrive in the same prose and the second one won.
 
 **10. `crossall.py` needs `--skip` and the brief does not say so.**
 The pre-briefing's `0 of 1` was obtained before this repository had a `notes/`
@@ -218,3 +242,17 @@ decidable — which is precisely the failure mode
 
 Eleven briefs later that prescription has now caught its own author twice
 running.
+
+**But number 9 is a different species and it is the one worth carrying
+forward.** The other eleven are counts and readings that a second pass over the
+same page fixes. That one is an inference from **outside** the object — a
+correct observation about a download site, turned into a negative claim about a
+file's contents — and no amount of re-reading the brief would have caught it,
+because the brief is where it entered. It needs a rule rather than a second
+pass:
+
+> **Mark every statement in a pre-briefing as being about the object or about
+> the object's provenance, and never let the second kind produce a negation
+> about the first.** A distributor's catalogue, a shop manifest, a filename on
+> a web page and an owner's recollection are all evidence about how an object
+> arrived. What is inside it is settled by what is inside it.
