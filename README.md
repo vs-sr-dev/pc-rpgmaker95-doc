@@ -64,7 +64,7 @@ in a column that repository had published as *not declared*.
 | [10](docs/10-whose-bytes.md) | **whose bytes** — a man who signed his work, and the one thing taken out |
 | [11](docs/11-against-the-collection.md) | **against the collection** — one crossing, two denominators |
 | [12](docs/12-the-tools.md) | **the tools** — the box had nothing, and that was the good news |
-| [13](docs/13-corrections.md) | **corrections** — twelve in the brief and six of this session's own |
+| [13](docs/13-corrections.md) | **corrections** — twelve in the brief and seven of this session's own |
 | [14](docs/14-leftovers.md) | **leftovers** — what was not settled, with sources named |
 | [15](docs/15-prediction-scoring.md) | **prediction scoring** — and the answer to the question the brief asked |
 

@@ -1,4 +1,4 @@
-# 13 — corrections: twelve in the brief and six of this session's own
+# 13 — corrections: twelve in the brief and seven of this session's own
 
 *Measure: each entry names the file and the line that is wrong and the command
 that produces the right figure. The pre-briefing flagged no corrections of its
@@ -123,7 +123,7 @@ Another count of a table the source already printed
 
 ---
 
-## And six of this session's own
+## And seven of this session's own
 
 **A. Rule 0 was violated twice — once loudly, once silently.**
 A throwaway analysis script was passed through a heredoc and the shell ate a
@@ -178,7 +178,14 @@ distance. The check failed, the specimen was rebuilt.
 let it through. **A check that cannot fail is not a check**; the specimen is now
 text buried in binary at `p = 0.25`, ratio 136.5.
 
-**F. `coverage.py` classified two published text files as unclassifiable.**
+**F. `cptext.py` crashed on a default Windows console.** It prints Cyrillic
+and box drawing by design, and with no `PYTHONIOENCODING` set its own selftest
+died with `UnicodeEncodeError` partway through the table — a tool that works
+only when an environment variable happens to be set. Found by running all eight
+selftests one last time with the variable unset. It now reconfigures its own
+streams to UTF-8 and falls back to replacement characters rather than raising.
+
+**G. `coverage.py` classified two published text files as unclassifiable.**
 The first version put `FILE_ID.DIZ` and `DISK1.ID` in the `neither` bucket
 because the `.DIZ` codepage is ambiguous, which dropped the published figure to
 0.8332 % and contradicted the pre-briefing's 0.8387 % for the wrong reason. The
@@ -189,7 +196,7 @@ moved to `published` and the figure agrees with the brief exactly.
 
 ## The count
 
-**Twelve in the brief and six here.** The last eight briefs carried nine, seven,
+**Twelve in the brief and seven here.** The last eight briefs carried nine, seven,
 eight, eleven, twelve, eleven, eleven and nine, and the author is the same.
 This one flagged none of its own and the twelve above are the answer to that.
 

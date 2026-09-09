@@ -146,6 +146,16 @@ def cmd_selftest(args):
 
 
 def main():
+    # This tool prints Cyrillic and box drawing by design. A Windows console
+    # defaulting to CP1252 raises UnicodeEncodeError halfway through a table,
+    # which would make the selftest fail for a reason that has nothing to do
+    # with the checks. Force UTF-8 where the stream allows it and fall back to
+    # replacement characters where it does not; never crash on output.
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
     c = sub.add_parser("census")

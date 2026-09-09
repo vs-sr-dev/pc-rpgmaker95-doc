@@ -50,7 +50,7 @@ constructed in memory**, and forty of the sixty-seven assert that something is
 **rejected** or **not** touched. A reader that only ever says yes has not been
 tested.
 
-### Three defects the selftests caught before any real byte was read
+### Four defects the selftests caught
 
 **One, in `isz.py`, and it was a wrong derivation.** The entry record was built
 as 31 fixed bytes plus the name. The specimen builder's own assertion fired:
@@ -78,6 +78,14 @@ escape clause reading `or p == 1.0`. **A check that cannot fail is not a check.*
 The specimen is now thirty NUL bytes followed by ten letters, repeated: `p` is
 0.25, chance predicts 7.32 runs of six and there are 1,000, and the ratio is
 136.5.
+
+**Four, and it was found by running all eight one last time with
+`PYTHONIOENCODING` unset.** `cptext.py` prints Cyrillic and box drawing by
+design and died with `UnicodeEncodeError` on a default Windows console — a tool
+that worked only because an environment variable happened to be set for every
+earlier run. It now reconfigures its own streams and falls back to replacement
+characters. **The three earlier defects were caught by the specimens; this one
+was caught by distrusting the environment**, which no specimen can do for you.
 
 ---
 

@@ -66,7 +66,7 @@ figures.
 
 | | verdict | note |
 |---|---|---|
-| C26 | **hit** | eight selftests, 67 checks, 40 of them rejections, and **three real defects caught on the first run** — a wrong record derivation, a wrong specimen, and a check that passed for the wrong reason |
+| C26 | **hit** | eight selftests, 67 checks, **40 of them rejections**, and **four real defects caught by running them** — a wrong record derivation, a wrong specimen, a check that passed for the wrong reason, and a tool that crashed on a default console |
 | C27 | **half** | every figure carries its command and no `_pre\` figure reaches a chapter unre-derived. But the clause also required every truncated listing to **name the file under `notes\` that holds the rest**, and several — the largest twelve, the group listings, the 1999 dates — give the command instead |
 | C28 | **hit** | `grep -rniE 'd:\\homebrew\|/homebrew7\|c:\\users' docs/ <tools written here>` returns **0**; the third-party paths, telephone numbers and URL are published as artefacts |
 | C29 | **miss** | **violated twice.** Once loudly — a heredoc ate a backslash and Python refused the line — and once silently, appending the `pc-gamelist-doc` write-up through a quoted heredoc containing spaces. The second did no damage and was verified afterwards, which is luck rather than method ([13](13-corrections.md)) |
@@ -105,7 +105,7 @@ figures.
 | C51 | **hit** | extended by ten and re-run: **54 pointed, 36 refused, 18 exited 0, 0 absent**, and its own 900-second recursion fixed. `jstore.py` claimed **288,003 GUIDs at residue 0** and the output was read |
 | C52 | **hit** | pointed at the three NE files, exit 0, first line `no PE signature at 0xE00` — and the summary defect recorded: it prints `PE files : 3` for three files it has just rejected |
 | C53 | **miss** | `kfaccount.py` did **not** report coverage from a catch-all bucket. It printed its usage message and exited 0 with no arguments, with `--root` and with a positional path. The clause predicted the wrong failure |
-| C54 | **hit** | **twelve** in the brief and six of this session's own, against a floor of six |
+| C54 | **hit** | **twelve** in the brief and seven of this session's own, against a floor of six |
 
 **Open content: 20.00 of 23 against 18.68 predicted, delta −1.32.**
 
