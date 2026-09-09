@@ -125,7 +125,7 @@ Another count of a table the source already printed
 
 ## And six of this session's own
 
-**A. Rule 0 was violated once, and it failed loudly.**
+**A. Rule 0 was violated twice — once loudly, once silently.**
 A throwaway analysis script was passed through a heredoc and the shell ate a
 backslash:
 
@@ -138,7 +138,16 @@ SyntaxError: unterminated string literal
 
 `.rsplit('\\', 1)` reached Python as `.rsplit('\', 1)`. It raised rather than
 returning a number, which is luck and not method, and the work was redone with
-`Write` into `tools/coverage.py`. **One violation, loud.**
+`Write` into `tools/coverage.py`.
+
+**The second was silent and did no damage, which is worse.** The
+`pc-gamelist-doc` write-up was appended with a quoted heredoc — content full
+of spaces and backticks, no backslashes. The quoting meant nothing was
+expanded and the text landed byte-correct, and it was verified afterwards by
+reading it back. **The rule says `Write` or `Edit` for anything containing a
+backslash or a space, and it says so precisely because "it happened to be
+fine" is not a check.** Two violations, one loud, one silent, on a session
+that predicted zero ([15](15-prediction-scoring.md), C29).
 
 **B. An inherited tool was overwritten.**
 `tools/account.py` was created for this object's four-layer accounting without

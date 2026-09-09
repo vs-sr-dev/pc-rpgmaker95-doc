@@ -32,7 +32,7 @@ quantity it states about itself.
 | the executables | **5 NE and 13 PE** — and only the 5 were visible before |
 | the crossings | 0 of 1 on the object, **1 of 12** on the members |
 | the personal data | 4 hits, 0 false positives, and **one deliberate redaction** |
-| the calibration | inherited 23.50 of 25 against 22.92; open 27.50 of 29 against 24.08 |
+| the calibration | inherited **24.50 of 25** against 22.92 predicted; open **24.50 of 29** against 24.08, a term of **−0.42** |
 
 **The headline is a prediction that was wrong.** This repository wrote down, in
 advance, that `rpg95.exe` would be a sixteen-bit NE binary, because the
