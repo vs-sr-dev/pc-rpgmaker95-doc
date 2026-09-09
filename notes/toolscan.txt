@@ -1,0 +1,8 @@
+files scanned                      : 522
+files with a forbidden control byte: 0
+
+=== POSITIVE CONTROLS: each must be reported ===
+  0x00  NUL, below 9         -> reported
+  0x01  SOH, below 9         -> reported
+  0x1B  ESC, inside 14..31   -> reported
+all three fired.

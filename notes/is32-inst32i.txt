@@ -1,0 +1,19 @@
+container   : _work/members/_INST32I.EX_   320276 bytes
+signature   : 2a ab 79 d8   as a little-endian u32 0xD879AB2A   as the bytes read left to right 0x2AAB79D8
++0x04, +0x06: 256 0
+banner      : Copyright (c) 1990-1995 Stirling Technologies, Inc. All Rights Reserve
+            (70 bytes, no terminator, and it stops mid-word)
+members     : 4
+
+  rec at  installed as   shipped as         offset     stored   expanded
+  82      INSTALL.EXE    _INS0432._MP          268     289709     674816
+  129     LZWSERV.EXE    _INZ0432._MP       289977      11534      20656
+  176     WUTL95i.DLL    _WUTL95.DLL        301511      16148      36864
+  222     BOOT16.EXE     _INJ0432._MP       317659       2617       7168
+
+  the record table ends where the first member's data begins ok     table ends at 268, first data at 268
+  the members' offsets chain with no gap and no overlap      ok     4 of 4 members begin where the previous ended
+  first offset + stored sizes = the file, residue 0          ok     268 + 320008 = 320276 against 320276, residue 0
+
+stored   : 320008
+expanded : 739504

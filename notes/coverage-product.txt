@@ -1,0 +1,19 @@
+denominator : 272 files, 20442049 bytes -- the files the four containers hold, at their declared expanded sizes
+
+  ext       files        bytes  bucket     format
+  MID         102       986405  published  Standard MIDI File (MMA RP-001)
+  BMP          78     11152730  published  Windows bitmap (Microsoft)
+  WAV          55      1084902  published  RIFF WAVE (Microsoft and IBM)
+  EXE           8      3353264  published  NE and PE (Microsoft)
+  DAT           8      1484216  neither    RPG Maker's own, no published specification
+  DLL           7       432128  published  NE and PE (Microsoft)
+  TXT           5         4405  published  plain text
+  ATR           4         1024  neither    RPG Maker's own, no published specification
+  HLP           2      1700484  neither    WinHelp 3.x, no published specification
+  INI           2        36222  published  plain text
+  INS           1       206269  neither    InstallShield compiled setup script, not opened here
+
+  published   257 files     17050056 bytes    83.4068 % of 20442049
+  derived       0 files            0 bytes     0.0000 % of 20442049
+  neither      15 files      3391993 bytes    16.5932 % of 20442049
+  SUM         272 files     20442049 bytes

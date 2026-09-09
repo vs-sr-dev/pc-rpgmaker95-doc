@@ -1,0 +1,19 @@
+denominator : 12 files, 7354728 bytes -- the twelve files the ZIP holds
+
+  ext       files        bytes  bucket     format
+  EXE           2        53120  published  NE and PE (Microsoft)
+  ID            1            5  published  plain text
+  DIZ           1          400  published  plain text; CP437 and CP866 render it identically
+  INI           1           61  published  plain text
+  INS           1        66661  derived    InstallShield Z archive, derived here
+  PKG           1         4513  derived    InstallShield manifest, derived here
+  EX_           1       320276  derived    InstallShield _INST32I container, derived here
+  1             1      6621095  derived    InstallShield Z archive, derived here
+  DLL           1         6128  published  NE and PE (Microsoft)
+  LIB           1       280502  derived    InstallShield Z archive, derived here
+  TXT           1         1967  published  plain text
+
+  published     7 files        61681 bytes     0.8387 % of 7354728
+  derived       5 files      7293047 bytes    99.1613 % of 7354728
+  neither       0 files            0 bytes     0.0000 % of 7354728
+  SUM          12 files      7354728 bytes

@@ -1,0 +1,24 @@
+path                                              fmt     kind      bytes     linker COFF (UTC)          mtime (local)       CompanyName / module
+---------------------------------------------- ------ -------- ---------- ---------- ------------------- ------------------- ------------------------------
+SETUP.EXE                                        NE16   native      44928       5.60 -                   1996-11-04 13:04:12 InstallShield Launcher SE v2.1 (C)
+_ISDEL.EXE                                       NE16   native       8192       5.60 -                   1995-09-07 19:22:40 Deleter Process (c) Stirling Techn
+_SETUP.DLL                                       NE16   native       6128       5.60 -                   1996-09-30 08:06:54 InstallSHIELD Resource DLL (c) Sti
+
+=== files whose mtime PRECEDES their own COFF link timestamp ===
+(a file cannot be written before it is linked; where this happens
+ the mtime is synthetic, or the two clocks are in different zones)
+
+    none
+
+impossible mtimes : 0 of 0 datable binaries
+
+binaries        : 3
+by format       : NE16 3
+
+Authenticode: 0 of 0 PE files carry a certificate table
+    none
+
+CompanyName / module name, by count:
+    InstallShield Launcher SE v2.1 (C) Insta 1
+    Deleter Process (c) Stirling Technologie 1
+    InstallSHIELD Resource DLL (c) Stirling  1

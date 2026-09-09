@@ -1,0 +1,10 @@
+Director containers found : 0
+
+magic  byte order                     files          bytes
+
+ext          RIFX     XFIR
+
+imap ver     files  reading (cited from pc-883d-doc)
+
+codec tag after the outer length : {}
+

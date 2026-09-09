@@ -1,0 +1,26 @@
+########## verres census on the ZIP members (3 NE, 0 PE)
+FILE                                         CompanyName            LegalCopyright
+SETUP.EXE                                    _work/members\SETUP.EXE: no PE signature at 0xE00
+_ISDEL.EXE                                   _work/members\_ISDEL.EXE: no PE signature at 0x80
+_SETUP.DLL                                   _work/members\_SETUP.DLL: no PE signature at 0x80
+
+PE files                       : 3
+carrying a version resource    : 0
+with no version resource at all: 0
+exit=0
+
+########## verres census on the 256 recovered product files
+FILE                                         CompanyName            LegalCopyright
+000_USER32.DLL                               Microsoft Corporation  Copyright © Microsoft Corp. 1991-1995
+000_rpg95.exe                                ASCII                  Copyright (c) 1997 by ASCII CorporationCopyright (c) 1997 
+000_unlha32.dll                              (empty)                (C)Micco 1995-97.  All rights reserved.
+003_SETUP.EXE                                ASCII                  Copyright (c) 1996. All Rights Reserved.
+003_game.exe                                 (empty)                Copyright (c) 1997 by ASCII Corporation
+Copyright (c) 1997
+011_game_engl_123.exe                        (empty)                Copyright (c) 1997 by ASCII Corporation
+Copyright (c) 1997
+
+PE files                       : 6
+carrying a version resource    : 6
+with no version resource at all: 0
+exit=0

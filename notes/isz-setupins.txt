@@ -1,0 +1,19 @@
+archive     : _work/members/SETUP.INS   66661 bytes
+declared    : 1 files in 1 directories
+
+directories:
+  idx   files  chunk  name
+  0         1     11  (empty)
+
+  the members' offsets chain with no gap and no overlap      ok     1 of 1 members begin where the previous one ended
+  the last member ends exactly at the directory table        ok     last member ends at 66598, the directory table begins at 66598
+  header + data + both tables = the archive, residue 0       ok     255 + 66343 + 11 + 52 = 66661 against 66661, residue 0
+  the directory file counts sum to the header's file count   ok     1 against 1
+
+stored bytes   : 66343
+expanded field : 206269
+entries whose expanded field is BELOW the stored size : 0 of 1
+
+first 1 of 1 entries:
+      #     stored   expanded     offset   vol date       time     name
+      0      66343     206269        255     0 1996-12-19 17:19:54 SETUP.INS

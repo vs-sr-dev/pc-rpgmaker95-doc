@@ -1,0 +1,297 @@
+manifest        : ../pc-clic11-doc/_work/iso/FP98/SETUP.PKG
+file length     : 49276 bytes
+leading u32     : 0xC068A34A   (low half 0xA34A is constant; high half 49256 is +0x0A plus 14 on both specimens: yes)
+header unknowns : 0 2 0 49242 0
+group count     : 108   (declared and parsed)
+group table     : offsets 16 .. 2004
+file count      : 2399   (declared and parsed)
+pad after count : 0
+record table    : offsets 2008 .. 49258
+walk ended      : 18 bytes from the end of the file
+declared bytes  : 20851997   (the sum of 2399 u32 size fields)
+
+trailer, verbatim, 18 bytes:
+  hex   01 00 01 00 06 00 64 61 74 61 2e 7a 01 01 0a 00 00 00
+  ascii ......data.z......
+
+groups, as named in the group table:
+  artgalry bots\fpcount client_bin client_bin\ita client_selfreg clipart\clip1 clipart\clip2 content_nodoc\cgi-bin content_nodoc\cgi-bin\_vti_cnf defaultweb defaultweb\images defaultweb\_borders defaultweb\_overlay defaultweb\_themes\global defaultweb\_vti_pvt ext_bin ext_bin\ita ext_client_bin ext_client_win ext_win fonts fpclass frames\bantoc.tem frames\footer.tem frames\footnote.tem frames\header.tem frames\horzsplt.tem frames\navwtoc.tem frames\threelev.tem frames\toc.tem frames\topdown.tem frames\vertsplt.tem htmladmin\cgi htmladmin\cgi\scripts htmladmin\isapi htmladmin\isapi\scripts httpd_common httpd_common\conf httpd_common\icons httpd_stub images isapi\_vti_bin isapi\_vti_bin\_vti_adm isapi\_vti_bin\_vti_aut pages\1center.tem pages\1cheads.tem pages\1cleft.tem pages\1cright.tem pages\2ceven.tem pages\2cmenul.tem pages\2cmenur.tem pages\2cstagr.tem pages\3c2stagl.tem pages\3ceven.tem pages\3cmenuc.tem pages\3cmenul.tem pages\3csidbar.tem pages\4ccenter.tem pages\4cstagc.tem pages\4cstagl.tem pages\biblio.tem pages\confirm.tem pages\faq.tem pages\feedback.tem pages\fpcdfwiz.wiz pages\fpidcwiz.wiz pages\guestbk.tem pages\normal.tem pages\reguser.tem pages\search.tem pages\toc.tem pages\vtiform.wiz samples serk serk\images servsupp serv_client_bin serv_client_bin\ita shared\forms3 shared\grphflt shared\textconv system_common system_common\msinfo system_win95 system_winnt themes themes\arcs themes\construc themes\expeditn themes\global themes\inmotion themes\nature themes\sumipntg tutorial webs\custsupp.tem webs\custsupp.tem\images webs\empty.tem webs\msimport.wiz webs\normal.tem webs\personal.tem webs\personal.tem\images webs\project.tem webs\project.tem\images webs\vtidisc.wiz webs\vtipres.wiz _vti_bin _vti_bin\_vti_adm _vti_bin\_vti_aut
+
+by group index:
+  idx   name        files          bytes
+  0     artgalry        6          64110
+  1     bots\fpcount      3          20362
+  2     client_bin     33        2555241
+  3     client_bin\ita     11         679925
+  4     client_selfreg      3         602589
+  5     clipart\clip1    198         940794
+  6     clipart\clip2   1246        4209813
+  7     content_nodoc\cgi-bin      2           4584
+  8     content_nodoc\cgi-bin\_vti_cnf      2           3279
+  9     defaultweb      5           3727
+  10    defaultweb\images      3          19838
+  11    defaultweb\_borders      2          26351
+  12    defaultweb\_overlay      8           2676
+  13    defaultweb\_themes\global     45          42073
+  14    defaultweb\_vti_pvt      2            643
+  15    ext_bin        17         230799
+  16    ext_bin\ita      1            869
+  17    ext_client_bin      1           5892
+  18    ext_client_win      1         198308
+  19    ext_win         2         260147
+  20    fonts          28        2714663
+  21    fpclass         6         106689
+  22    frames\bantoc.tem      2            932
+  23    frames\footer.tem      2            506
+  24    frames\footnote.tem      2            466
+  25    frames\header.tem      2            489
+  26    frames\horzsplt.tem      2            470
+  27    frames\navwtoc.tem      2            511
+  28    frames\threelev.tem      2            569
+  29    frames\toc.tem      2            526
+  30    frames\topdown.tem      2            511
+  31    frames\vertsplt.tem      2            502
+  32    htmladmin\cgi     14          14877
+  33    htmladmin\cgi\scripts      1            646
+  34    htmladmin\isapi     14          17224
+  35    htmladmin\isapi\scripts      1            687
+  36    httpd_common      1           3786
+  37    httpd_common\conf      4          57340
+  38    httpd_common\icons     12           4837
+  39    httpd_stub      1            216
+  40    images          1          13975
+  41    isapi\_vti_bin      2          55884
+  42    isapi\_vti_bin\_vti_adm      1           6507
+  43    isapi\_vti_bin\_vti_aut      1           6700
+  44    pages\1center.tem      3          10139
+  45    pages\1cheads.tem      3           5024
+  46    pages\1cleft.tem      4           6483
+  47    pages\1cright.tem      4          29007
+  48    pages\2ceven.tem      3          33878
+  49    pages\2cmenul.tem      4           5916
+  50    pages\2cmenur.tem      4          13506
+  51    pages\2cstagr.tem      7          53646
+  52    pages\3c2stagl.tem      4          19599
+  53    pages\3ceven.tem      3          29832
+  54    pages\3cmenuc.tem      4           6837
+  55    pages\3cmenul.tem      4          16299
+  56    pages\3csidbar.tem      6          32656
+  57    pages\4ccenter.tem      3          17826
+  58    pages\4cstagc.tem      3           4215
+  59    pages\4cstagl.tem      4           7268
+  60    pages\biblio.tem      3          28853
+  61    pages\confirm.tem      3           3226
+  62    pages\faq.tem      3           2698
+  63    pages\feedback.tem      3           3608
+  64    pages\fpcdfwiz.wiz      3         157037
+  65    pages\fpidcwiz.wiz      3          48632
+  66    pages\guestbk.tem      4           2946
+  67    pages\normal.tem      3            433
+  68    pages\reguser.tem      3           5571
+  69    pages\search.tem      3           4321
+  70    pages\toc.tem      3           2709
+  71    pages\vtiform.wiz      2          50233
+  72    samples         2            190
+  73    serk           15          32878
+  74    serk\images     19         156346
+  75    servsupp        4         162757
+  76    serv_client_bin      3          24874
+  77    serv_client_bin\ita      1           8126
+  78    shared\forms3      3         695170
+  79    shared\grphflt      8         464433
+  80    shared\textconv      9         861242
+  81    system_common     23        2572201
+  82    system_common\msinfo      5         418326
+  83    system_win95      2         227289
+  84    system_winnt      1          33766
+  85    themes          1         201419
+  86    themes\arcs     36          21091
+  87    themes\construc     45          68159
+  88    themes\expeditn     45          88111
+  89    themes\global     45          42304
+  90    themes\inmotion     45          70880
+  91    themes\nature     45          85942
+  92    themes\sumipntg     45          70641
+  93    tutorial        4          95198
+  94    webs\custsupp.tem     23          15524
+  95    webs\custsupp.tem\images      2           6826
+  96    webs\empty.tem      1            289
+  97    webs\msimport.wiz      2          52640
+  98    webs\normal.tem      2            244
+  99    webs\personal.tem      7           3577
+  100   webs\personal.tem\images      3          19686
+  101   webs\project.tem     27          41298
+  102   webs\project.tem\images      4          17369
+  103   webs\vtidisc.wiz     29         260733
+  104   webs\vtipres.wiz     92         488318
+  105   _vti_bin        2          55984
+  106   _vti_bin\_vti_adm      1           2084
+  107   _vti_bin\_vti_aut      1           2151
+        TOTAL        2399       20851997
+
+by extension:
+  ext       files          bytes
+  GIF        1852        3999935
+  HTM         138         117140
+  DLL          81        6710348
+  INF          56           8488
+  JPG          44         278701
+  CSS          40          20954
+  EXE          33        2758304
+  HTX          31          26777
+  TTF          28        2441722
+  DIB          25          92955
+  HLP          10         779806
+  UTF8          8             98
+  FLT           8         536734
+  CNV           8         847180
+  CNT           6          12289
+  TXT           4           2073
+  CLASS         4          12823
+  ORG           3           4442
+  MAP           3            376
+  CAG           2        2093651
+  CNF           2            343
+  HTML          2           2092
+  JS            2           2396
+  TLB           2          12661
+  SRG           1           1832
+  URL           1            131
+  BTL           1            623
+  PL            1           1602
+  MSG           1          20837
+  TYP           1           1107
+  OCX           1          63577
+  TOTAL      2399       20851997
+
+names appearing more than once : 104
+  BANNER.HTM           x3  sizes [429, 683]  groups [32, 34, 73]
+  BLKTXTR1.JPG         x2  sizes [994]  groups [103, 104]
+  BLUTXTR1.JPG         x2  sizes [877]  groups [103, 104]
+  BLUTXTR2.JPG         x2  sizes [734]  groups [103, 104]
+  BLUTXTR3.JPG         x2  sizes [1877]  groups [103, 104]
+  BRNTXTR1.JPG         x2  sizes [1566]  groups [103, 104]
+  BRNTXTR2.JPG         x2  sizes [1222]  groups [103, 104]
+  CAKE.JPG             x2  sizes [24903]  groups [51, 53]
+  CHECK.HTM            x2  sizes [610, 652]  groups [32, 34]
+  CITY.GIF             x3  sizes [15105]  groups [10, 93, 100]
+  COLOR0.CSS           x8  sizes [439, 441, 443, 446, 447, 449]  groups [13, 86, 87, 88, 89, 90, 91, 92]
+  COLOR1.CSS           x8  sizes [446, 447, 449, 452, 453, 456, 459]  groups [13, 86, 87, 88, 89, 90, 91, 92]
+  COMCTL32.DLL         x2  sizes [201419]  groups [83, 85]
+  CONTENTS.HTM         x2  sizes [651]  groups [32, 34]
+  DISABLE.HTM          x2  sizes [713, 754]  groups [32, 34]
+  DISCUSS.HTM          x2  sizes [680, 686]  groups [94, 101]
+  EARTH2.JPG           x2  sizes [10832]  groups [51, 56]
+  ENABLE.HTM           x2  sizes [643, 683]  groups [32, 34]
+  FAQ.HTM              x2  sizes [814, 968]  groups [62, 94]
+  FAVORITE.HTM         x2  sizes [969, 981]  groups [9, 99]
+  FEEDBACK.HTM         x2  sizes [603, 1425]  groups [63, 94]
+  FISH.JPG             x4  sizes [7354]  groups [50, 51, 56, 56]
+  FOOTER.HTM           x3  sizes [294, 428, 500]  groups [23, 94, 101]
+  FPADMIN.HTM          x2  sizes [400]  groups [32, 34]
+  FPCOUNT.EXE          x2  sizes [55048]  groups [41, 105]
+  FPPUZZLE.GIF         x2  sizes [3835]  groups [32, 34]
+  FRONTPAG.GIF         x2  sizes [3903]  groups [10, 100]
+  GLOBAL.INF           x2  sizes [72]  groups [13, 89]
+  GLOBAL.UTF8          x2  sizes [4, 70]  groups [13, 89]
+  GLOBANNA.GIF         x2  sizes [11264]  groups [13, 89]
+  GLOBANND.GIF         x2  sizes [15871]  groups [13, 89]
+  GLOBUL1A.GIF         x2  sizes [104]  groups [13, 89]
+  GLOBUL1D.GIF         x2  sizes [100]  groups [13, 89]
+  GLOBUL2A.GIF         x2  sizes [72]  groups [13, 89]
+  GLOBUL2D.GIF         x2  sizes [69]  groups [13, 89]
+  GLOBUL3A.GIF         x2  sizes [70]  groups [13, 89]
+  GLOBUL3D.GIF         x2  sizes [67]  groups [13, 89]
+  GLOGLOB.GIF          x2  sizes [151]  groups [13, 89]
+  GLOHBUDA.GIF         x2  sizes [580]  groups [13, 89]
+  GLOHBUDD.GIF         x2  sizes [315]  groups [13, 89]
+  GLOHBUHA.GIF         x2  sizes [843]  groups [13, 89]
+  GLOHBUSA.GIF         x2  sizes [900]  groups [13, 89]
+  GLOHBUSD.GIF         x2  sizes [526]  groups [13, 89]
+  GLOHOMBD.GIF         x2  sizes [291]  groups [13, 89]
+  GLOHOMDA.GIF         x2  sizes [281]  groups [13, 89]
+  GLOHOMHA.GIF         x2  sizes [280]  groups [13, 89]
+  GLOHOMSA.GIF         x2  sizes [289]  groups [13, 89]
+  GLOHORSA.GIF         x2  sizes [161]  groups [13, 89]
+  GLOHORSD.GIF         x2  sizes [152]  groups [13, 89]
+  GLONEXBD.GIF         x2  sizes [331]  groups [13, 89]
+  GLONEXDA.GIF         x2  sizes [315]  groups [13, 89]
+  GLONEXHA.GIF         x2  sizes [326]  groups [13, 89]
+  GLONEXSA.GIF         x2  sizes [327]  groups [13, 89]
+  GLOPREBD.GIF         x2  sizes [325]  groups [13, 89]
+  GLOPREDA.GIF         x2  sizes [314]  groups [13, 89]
+  GLOPREHA.GIF         x2  sizes [316]  groups [13, 89]
+  GLOPRESA.GIF         x2  sizes [321]  groups [13, 89]
+  GLOTEXTB.GIF         x2  sizes [204]  groups [13, 89]
+  GLOUPBD.GIF          x2  sizes [329]  groups [13, 89]
+  GLOUPDA.GIF          x2  sizes [317]  groups [13, 89]
+  GLOUPHA.GIF          x2  sizes [319]  groups [13, 89]
+  GLOUPSA.GIF          x2  sizes [320]  groups [13, 89]
+  GLOVBUDA.GIF         x2  sizes [580]  groups [13, 89]
+  GLOVBUDD.GIF         x2  sizes [315]  groups [13, 89]
+  GLOVBUHA.GIF         x2  sizes [842]  groups [13, 89]
+  GLOVBUSA.GIF         x2  sizes [914]  groups [13, 89]
+  GLOVBUSD.GIF         x2  sizes [516]  groups [13, 89]
+  GRAPH0.CSS           x8  sizes [587, 589, 591, 598, 599]  groups [13, 86, 87, 88, 89, 90, 91, 92]
+  GRAPH1.CSS           x8  sizes [665, 672, 676, 677, 685, 701]  groups [13, 86, 87, 88, 89, 90, 91, 92]
+  GRYTXTR1.JPG         x2  sizes [1039]  groups [103, 104]
+  GRYTXTR2.JPG         x2  sizes [1544]  groups [103, 104]
+  GRYTXTR3.JPG         x2  sizes [1140]  groups [103, 104]
+  GRYTXTR4.JPG         x2  sizes [1257]  groups [103, 104]
+  GRYTXTR5.JPG         x2  sizes [979]  groups [103, 104]
+  HEADER.HTM           x3  sizes [297, 366, 369]  groups [25, 94, 101]
+  HTIMAGE.EXE          x3  sizes [224, 4357]  groups [7, 8, 15]
+  IMAGEMAP.EXE         x3  sizes [224, 3055]  groups [8, 9, 15]
+  INDEX.HTM            x5  sizes [125, 482, 711, 810, 1022]  groups [9, 94, 98, 99, 101]
+  INTEREST.HTM         x2  sizes [666, 894]  groups [9, 99]
+  IPADDRESS.HTM        x2  sizes [910, 951]  groups [32, 34]
+  LEOPARD.JPG          x2  sizes [12868]  groups [52, 57]
+  LOGO.GIF             x3  sizes [279, 3903]  groups [32, 34, 104]
+  MYFAV3.HTM           x2  sizes [606, 698]  groups [9, 99]
+  NEWSERVER.HTM        x2  sizes [599, 639]  groups [32, 34]
+  NEWSUBWEB.HTM        x2  sizes [592, 634]  groups [32, 34]
+  NORMAL.INF           x2  sizes [64, 87]  groups [68, 99]
+  PERMS.HTM            x2  sizes [836, 876]  groups [32, 34]
+  PHOTO.HTM            x2  sizes [678, 830]  groups [10, 100]
+  RECALC.HTM           x2  sizes [581, 622]  groups [32, 34]
+  SEARCH.HTM           x3  sizes [1104, 1109, 1341]  groups [69, 94, 101]
+  SEARCH.HTX           x2  sizes [580, 972]  groups [103, 104]
+  STYLE.HTX            x2  sizes [682, 692]  groups [103, 104]
+  SUNFLOWR.JPG         x2  sizes [10049, 27362]  groups [55, 60]
+  SUNSET.GIF           x3  sizes [25790]  groups [11, 93, 101]
+  THEME.CSS            x8  sizes [442, 446, 451, 452, 456, 458, 468]  groups [14, 87, 87, 89, 90, 91, 92, 93]
+  TOC.HTM              x2  sizes [278, 944]  groups [29, 70]
+  TOC.HTX              x2  sizes [486, 972]  groups [103, 104]
+  TOC.INF              x2  sizes [108, 203]  groups [30, 71]
+  UNDERCON.GIF         x4  sizes [289, 297, 836]  groups [41, 96, 103, 104]
+  UNINSTALL.HTM        x2  sizes [646, 687]  groups [33, 35]
+  VHTTPD32.EXE         x2  sizes [13975, 54151]  groups [37, 40]
+  WB01409_.GIF         x2  sizes [642]  groups [5, 6]
+  WHTTXTR1.JPG         x2  sizes [809]  groups [103, 104]
+  WHTTXTR2.JPG         x2  sizes [936]  groups [104, 105]
+
+what the unnamed header integers land on:
+  +0x04       0   not an offset into this file
+  +0x06       2   inside the file, 49274 bytes from the end
+  +0x08       0   not an offset into this file
+  +0x0A   49242   the end of the record table minus the sixteen-byte header
+  +0x0C       0   not an offset into this file
+
+first 4 of 2399 records:
+       #         size group  name
+       0         1266     0  artgalry.cnt
+       1        22622     0  artgalry.exe
+       2        28100     0  artgalry.hlp
+       3         1832     0  artgalry.srg
+
+largest ten of 2399:
+       1513952     6  fp98clp2.cag
+        706543     2  fpeditor.exe
+        618094     2  frontpg.hlp
+        599777    78  fm20.dll
+        579699     5  fp98clp1.cag
+        491226    81  MFC42.DLL
+        484027    81  MFC40.DLL
+        449650     2  fpexplor.exe
+        365017    20  fp30wel.dll
+        292425   104  vtipres.exe

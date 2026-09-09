@@ -1,0 +1,74 @@
+########## jstore.py pointed at SETUP.PKG
+index        : _work/members/SETUP.PKG
+bytes        : 4513
+lists        : 0
+GUIDs        : 0
+arithmetic   : 5 x 0 + 16 x 0 + 4513 = 4513
+residue      : 0
+filler runs  : 1 holding 4513 bytes, all zero : False
+GUIDs repeated inside this index : 0
+exit=0
+
+########## jstore.py pointed at _SETUP.1
+index        : _work/members/_SETUP.1
+bytes        : 6621095
+lists        : 4
+GUIDs        : 288003
+arithmetic   : 5 x 4 + 16 x 288003 + 2013027 = 6621095
+residue      : 0
+filler runs  : 5 holding 2013027 bytes, all zero : False
+GUIDs repeated inside this index : 2865
+exit=0
+
+########## kfaccount.py
+usage: kfaccount.py [-h] [--root ROOT] [--selftest] [--format] [--author]
+kfaccount.py: error: unrecognized arguments: _work/members
+exit=0
+
+########## isaccount.py
+usage: isaccount.py [-h] [--expect EXPECT]
+                    {selftest,families,purpose,check} [root]
+isaccount.py: error: argument mode: invalid choice: '_work/members' (choose from selftest, families, purpose, check)
+exit=0
+########## kfaccount.py --root _work/members
+usage: kfaccount.py [-h] [--root ROOT] [--selftest] [--format] [--author]
+
+options:
+  -h, --help   show this help message and exit
+  --root ROOT
+  --selftest
+  --format
+  --author
+exit=0
+
+########## isaccount.py check _work/members
+files                       : 12
+bytes, walked               : 7354728
+bytes, summed by family     : 7354728   residue 0
+bytes, summed by purpose    : 7354728   residue 0
+unclaimed files             : 12
+VERDICT                     : DOES NOT CLOSE
+exit=0
+
+########## isaccount.py families _work/members
+  SETUP.EXE                                                     44928  PE/COFF / UNCLAIMED
+  SETUP.INI                                                        61  text, XML and configuration / UNCLAIMED
+  SETUP.INS                                                     66661  UNCLAIMED / UNCLAIMED
+  SETUP.PKG                                                      4513  UNCLAIMED / UNCLAIMED
+  _INST32I.EX_                                                 320276  UNCLAIMED / UNCLAIMED
+  _ISDEL.EXE                                                     8192  PE/COFF / UNCLAIMED
+  _SETUP.1                                                    6621095  UNCLAIMED / UNCLAIMED
+  _SETUP.DLL                                                     6128  PE/COFF / UNCLAIMED
+  _SETUP.LIB                                                   280502  UNCLAIMED / UNCLAIMED
+  readme.txt                                                     1967  text, XML and configuration / UNCLAIMED
+exit=0
+########## kfaccount.py, no arguments
+usage: kfaccount.py [-h] [--root ROOT] [--selftest] [--format] [--author]
+
+options:
+  -h, --help   show this help message and exit
+  --root ROOT
+  --selftest
+  --format
+  --author
+exit=0

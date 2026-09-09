@@ -1,0 +1,23 @@
+=== the 2 MZ executables ===
+file                    size  cblp   cp     img  slack  crlc   hdr  cs:ip  ss:sp  int3f
+SETUP.EXE              44928   278    8    3862  41066     4   512  0000:0116 00ae:0800      0
+_ISDEL.EXE              8192   310    1     310   7882     0    64  0000:0000 0000:00b8      1
+total .EXE bytes: 53120
+
+=== e_cblp against the file length modulo 512 ===
+If these agree, the third byte of the file is arithmetic,
+not a signature, and there is no MZP marker in this folder.
+  SETUP.EXE            e_cblp= 278  size mod 512= 384  DIFFER  byte2=0x16 
+  _ISDEL.EXE           e_cblp= 310  size mod 512=   0  DIFFER  byte2=0x36 ('6')
+  0 of 2 agree
+
+=== toolchain banners ===
+  SETUP.EXE            none
+  _ISDEL.EXE           none
+
+=== no Borland overlay (.OVR) in this object ===
+  1000 Miglia had MM.OVR; this one has none, so there is no
+  overlay arithmetic to check.
+
+=== third-party software in this folder ===
+  files containing a third-party packer or library banner: 0

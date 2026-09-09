@@ -1,0 +1,12 @@
+packages            : 0
+name-table entries  : 0 (with repeats across packages)
+distinct names      : 0
+
+Traceback (most recent call last):
+  File "D:\Homebrew7\pc-rpgmaker95-doc\tools\namecensus.py", line 149, in <module>
+    main()
+    ~~~~^^
+  File "D:\Homebrew7\pc-rpgmaker95-doc\tools\namecensus.py", line 111, in main
+    % (len(once), 100.0 * len(once) / len(where)))
+                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+ZeroDivisionError: division by zero

@@ -1,0 +1,14 @@
+blobs : 12   bytes : 7354728
+
+pattern                         8-bit    blobs   UTF-16    blobs
+------------------------------------------------------------------
+e-mail shape                        1        1        0        0
+P.O. Box                            0        0        0        0
+telephone shape                     3        3        0        0
+Documents and Settings              0        0        0        0
+home dir                            0        0        0        0
+/home/                              0        0        0        0
+Copyright <name>                    0        0        0        0
+drive-letter home path              0        0        0        0
+------------------------------------------------------------------
+hits that only a UTF-16 pass finds : 0

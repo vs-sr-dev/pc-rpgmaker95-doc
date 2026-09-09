@@ -1,0 +1,14 @@
+============================================================================
+names ending in an underscore : 1
+of those, a Microsoft container : 0
+of those, NOT a container       : 1
+   _INST32I.EX_                                             320276
+containers NOT ending in an underscore : 0
+
+by container format:
+  format      n      on disc     declared  note
+
+
+where they live (top-level folder):
+
+by extension of the container:

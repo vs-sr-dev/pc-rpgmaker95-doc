@@ -1,0 +1,125 @@
+########## DENOMINATOR 1: the object as downloaded ##########
+my distinct sha1            : 1
+  (identical files inside one object collapse into one key here;
+   the file count is the tree census's, not this tool's)
+empty-file sha1 among mine  : no
+collection root             : ..
+skipping                    : pc-rpgmaker95-doc
+
+repositories swept          : 102
+list files swept            : 448
+hash tokens read            : 155217
+distinct sha1 in those lists: (counted below)
+
+========================================================================
+EMPTY-FILE SHA1 (the trap): 57 occurrences in 16 repositories
+   dc-dinocrisis-doc                        x4
+   pc-allodsonline-doc                      x2
+   pc-bloodandlace-doc                      x1
+   pc-brokensword4-doc                      x1
+   pc-canediterracotta-doc                  x1
+   pc-capcombeatemupbundle-doc              x1
+   pc-clic11-doc                            x9
+   pc-deadlypremonitiondc-doc               x3
+   pc-hugoshouseofhorrors-doc               x1
+   pc-ilmiocomputer0206                     x6
+   pc-karmaflow-doc                         x17
+   pc-kingsofthebeach-doc                   x4
+   pc-residentevil-doc                      x2
+   pc-wizardry-doc                          x3
+   pc-zerocomico-doc                        x1
+   vis-racetheclock-doc                     x1
+   -> excluded from the crossings below.
+
+========================================================================
+THE RATE AS A FUNCTION OF MINIMUM FILE LENGTH
+
+A crossing is a claim that two objects share a file. On a tree whose
+files are short, it is also a claim that two short byte strings
+happened to be equal, and those are not the same claim. This table is
+printed BEFORE any figure is quoted, and the figure quoted anywhere
+else has to name the threshold it was taken at.
+
+   min bytes    my hashes    crossings         rate
+           0            1            0      0.0000 %
+           1            1            0      0.0000 %
+           4            1            0      0.0000 %
+           8            1            0      0.0000 %
+          16            1            0      0.0000 %
+          32            1            0      0.0000 %
+          64            1            0      0.0000 %
+         128            1            0      0.0000 %
+         256            1            0      0.0000 %
+        1024            1            0      0.0000 %
+        4096            1            0      0.0000 %
+       65536            1            0      0.0000 %
+
+========================================================================
+CROSSINGS at a minimum length of 0 bytes: 0 of my 1 distinct hashes appear in another repository
+   (threshold 0 -- every hash, including files too short to be anybody's)
+
+
+########## DENOMINATOR 12: the ZIP members ##########
+my distinct sha1            : 12
+  (identical files inside one object collapse into one key here;
+   the file count is the tree census's, not this tool's)
+empty-file sha1 among mine  : no
+collection root             : ..
+skipping                    : pc-rpgmaker95-doc
+
+repositories swept          : 102
+list files swept            : 448
+hash tokens read            : 155217
+distinct sha1 in those lists: (counted below)
+
+========================================================================
+EMPTY-FILE SHA1 (the trap): 57 occurrences in 16 repositories
+   dc-dinocrisis-doc                        x4
+   pc-allodsonline-doc                      x2
+   pc-bloodandlace-doc                      x1
+   pc-brokensword4-doc                      x1
+   pc-canediterracotta-doc                  x1
+   pc-capcombeatemupbundle-doc              x1
+   pc-clic11-doc                            x9
+   pc-deadlypremonitiondc-doc               x3
+   pc-hugoshouseofhorrors-doc               x1
+   pc-ilmiocomputer0206                     x6
+   pc-karmaflow-doc                         x17
+   pc-kingsofthebeach-doc                   x4
+   pc-residentevil-doc                      x2
+   pc-wizardry-doc                          x3
+   pc-zerocomico-doc                        x1
+   vis-racetheclock-doc                     x1
+   -> excluded from the crossings below.
+
+========================================================================
+THE RATE AS A FUNCTION OF MINIMUM FILE LENGTH
+
+A crossing is a claim that two objects share a file. On a tree whose
+files are short, it is also a claim that two short byte strings
+happened to be equal, and those are not the same claim. This table is
+printed BEFORE any figure is quoted, and the figure quoted anywhere
+else has to name the threshold it was taken at.
+
+   min bytes    my hashes    crossings         rate
+           0           12            1      8.3333 %
+           1           12            1      8.3333 %
+           4           12            1      8.3333 %
+           8           11            1      9.0909 %
+          16           11            1      9.0909 %
+          32           11            1      9.0909 %
+          64           10            1     10.0000 %
+         128           10            1     10.0000 %
+         256           10            1     10.0000 %
+        1024            9            1     11.1111 %
+        4096            8            1     12.5000 %
+       65536            4            0      0.0000 %
+
+========================================================================
+CROSSINGS at a minimum length of 0 bytes: 1 of my 12 distinct hashes appear in another repository
+   (threshold 0 -- every hash, including files too short to be anybody's)
+
+sha1 fe96bd82d167f50cb8cd9c9a32d72b77f45f8002   8192 bytes
+   mine : _ISDEL.EXE
+   also : pc-clic11-doc                      notes/sha1-all.txt
+

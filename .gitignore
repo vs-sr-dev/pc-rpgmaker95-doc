@@ -1,0 +1,14 @@
+# The object itself, and everything derived from it.
+#
+# `rpgmaker95-dist/` is a piece of unlicensed software and is not this
+# repository's to publish. `_work/` holds the twelve ZIP members and the 272
+# files recovered from the four InstallShield containers -- committing it
+# would publish the product rather than the documentation. `_pre/` is the
+# pre-briefing and `prompt.txt` is the session brief; neither is a measurement.
+rpgmaker95-dist/
+_work/
+_pre/
+prompt.txt
+
+__pycache__/
+*.pyc

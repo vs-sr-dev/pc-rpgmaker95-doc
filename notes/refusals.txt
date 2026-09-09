@@ -1,0 +1,120 @@
+54 readers, pointed at an object none of them was written
+for. The column that matters is the last one.
+
+agp.py           REFUSED  agp.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, cens
+                          for: the .agp archive of Heretic Kingdoms
+kultaccount.py   exit 0               5 of 12 files = 41.6667 %
+                          for: the accounting of Kult
+kultdat.py       REFUSED  kultdat.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, 
+                          for: Kult's .dat
+kultdia.py       REFUSED  kultdia.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, 
+                          for: Kult's dialogue
+kultexe.py       REFUSED  kultexe.py: error: argument cmd: invalid choice: '_work/members' (choose from commands, 
+                          for: Kult's executable
+kultidx.py       REFUSED  kultidx.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, 
+                          for: Kult's .idx
+kultlang.py      REFUSED  kultlang.py: error: argument cmd: invalid choice: '_work/members' (choose from census, d
+                          for: Kult's language tables
+kultnames.py     REFUSED  kultnames.py: error: argument cmd: invalid choice: '_work/members' (choose from census, 
+                          for: Kult's internal names
+maska.py         REFUSED  maska.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, sh
+                          for: Kult's mask grids
+oggmeta.py       REFUSED  oggmeta.py: error: argument cmd: invalid choice: '_work/members' (choose from show, cens
+                          for: Ogg Vorbis session metadata
+sdb.py           REFUSED  sdb.py: error: argument cmd: invalid choice: '_work/members' (choose from dump, strings,
+                          for: Kult's .sdb
+bkf.py           REFUSED  bkf.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, cens
+                          for: Delphine's .BKF archive -- DANGEROUS: a u32 count then fixed-width records
+lez.py           REFUSED  lez.py: error: argument cmd: invalid choice: '_work/members' (choose from validate, cens
+                          for: Delphine's LEZ1 compression
+buildorder.py    REFUSED  REFUSED: no .BKF under _work/members -- refusing an empty population
+                          for: the build order of Moto Racer's binaries
+mraccount.py     REFUSED  mraccount.py: error: the following arguments are required: members
+                          for: Moto Racer's accounting -- DANGEROUS: a hard-coded bucket list
+peimpexp.py      REFUSED  FileNotFoundError: [Errno 2] No such file or directory: '_work/members/Binaries/Win64/KF
+                          for: PE import and export directories (taught PE32+ this session)
+utf16sift.py     exit 0   hits that only a UTF-16 pass finds : 0
+                          for: UTF-16LE personal-data patterns
+tpsave.py        REFUSED  (no output)
+                          for: Theme Park's save files
+tptab.py         REFUSED  unknown command '_work/members'
+                          for: Theme Park's tables
+gogmanifest.py   REFUSED  FileNotFoundError: [Errno 2] No such file or directory: '_work/members\\goggame-galaxyFi
+                          for: GOG's galaxy file list
+hashdb.py        REFUSED  not a ZIP: _work/members
+                          for: GOG's .hashdb checksum table
+authenticode.py  REFUSED  FileNotFoundError: [Errno 2] No such file or directory: '_work/members/Binaries/Win64/KF
+                          for: the PKCS#7 blob of a signed PE
+lzo1x.py         REFUSED  lzo1x.py: error: unrecognized arguments: _work/members
+                          for: LZO1X decompression for UE3 packages
+kfpkg.py         REFUSED  kfpkg.py: error: unrecognized arguments: _work/members
+                          for: the Unreal package of Karmaflow -- DANGEROUS: it also looks for a length-prefixed table
+tfc.py           REFUSED  tfc.py: error: unrecognized arguments: _work/members
+                          for: a UE3 texture file cache
+tfcref.py        REFUSED  tfcref.py: error: unrecognized arguments: _work/members
+                          for: the mip offsets that reference a .tfc
+wwise.py         REFUSED  wwise.py: error: unrecognized arguments: _work/members
+                          for: Wwise .bnk soundbanks
+steamacf.py      exit 0     --check
+                          for: a Steam appmanifest .acf
+kfaudio.py       REFUSED  kfaudio.py: error: unrecognized arguments: _work/members
+                          for: Karmaflow's .wem and .wav
+kftext.py        REFUSED  kftext.py: error: unrecognized arguments: _work/members
+                          for: Karmaflow's localisation tables
+kfopera.py       REFUSED  kfopera.py: error: unrecognized arguments: _work/members
+                          for: Karmaflow's map names against a tracklist
+kfaccount.py     exit 0     --author
+                          for: Karmaflow's accounting -- DANGEROUS: a bucket list that assumes extensions
+pdbpaths.py      exit 0   drive letters : {}
+                          for: CodeView RSDS build paths
+buildroot.py     REFUSED  FileNotFoundError: [Errno 2] No such file or directory: '_work/members\\Binaries\\Win64\
+                          for: the studio build root of a native binary
+nrbf.py          REFUSED  PermissionError: [Errno 13] Permission denied: '_work/members'
+                          for: an MS-NRBF .NET remoting stream
+jstore.py        REFUSED  PermissionError: [Errno 13] Permission denied: '_work/members'
+                          for: Academagia's Storage index -- DANGEROUS: it looks for a marker, a u32 count and fixed-width records, which is the shape of @UTF and of AFS2
+clrmeta.py       exit 0   runtime versions : {}
+                          for: CLR metadata heaps -- expected NOT to refuse
+jsdata.py        REFUSED  PermissionError: [Errno 13] Permission denied: '_work/members'
+                          for: Academagia's data.bin record stream
+acaccount.py     REFUSED  FileNotFoundError: [Errno 2] No such file or directory: '_work/members\\OfficialContent\
+                          for: Academagia's accounting -- DANGEROUS: its bucket rules name that object's directories
+unityfs.py       exit 0     readme.txt                                                       1967
+                          for: Unity SerializedFile v21 -- DANGEROUS: it runs on v15 and reports nineteen terabytes
+unityarc.py      exit 0   12 archives: 0 pass, 0 fail, 12 refused
+                          for: UnityFS archives; this object has UnityWeb
+unityasset.py    exit 0   FAIL SETUP.INS: _work/members\SETUP.INS: magic is b'\x13]e\x8c:\x01\x02\x00', not b'Unit
+                          for: type-tree deserialisation of UnityFS nodes
+bundlebudget.py  REFUSED  unityarc.ArchiveError: _work/members\SETUP.INI: magic is b'[Startup', not b'UnityFS\x00'
+                          for: UnityFS block compression flags
+sfv15.py         exit 0   negative class IDs: 0  (a v15 reader cannot produce one: the class comes from a u16)
+                          for: Unity SerializedFile v15
+unityweb.py      exit 0   directories         : 0
+                          for: UnityWeb LZMA bundles
+criutf.py        exit 0   payload magic     : {}
+                          for: CRIWARE @UTF tables
+crihca.py        exit 0   comp parameter sets: 0 distinct
+                          for: CRI HCA audio frames
+luac52.py        exit 0   opcodes used : 0 of the 40 Lua 5.2 defines
+                          for: compiled Lua 5.2
+placement.py     REFUSED  placement.py: error: argument mode: invalid choice: '_work/members' (choose from selftes
+                          for: Unity scene placement records
+unitytex.py      exit 0   TOTAL            0              0
+                          for: Unity Texture2D decoding
+isaccount.py     REFUSED  VERDICT                     : DOES NOT CLOSE
+                          for: I am Setsuna's accounting -- DANGEROUS: its bucket rules name that object's directories
+verres.py        exit 0   with no version resource at all: 0
+                          for: PE version resources -- expected NOT to refuse, and it does not, but it counts NE files as PE
+sigcount.py      exit 0   apart so that neither can be quoted as the other.
+                          for: a byte signature given on the command line -- expected NOT to refuse
+refusals.py      exit 0   refusals.py: harness check, and this child does not recurse
+                          for: itself; pointed here to prove the harness runs
+
+readers pointed        : 54
+refused with a non-zero exit : 36
+exited 0 anyway              : 18
+absent from the box          : 0
+
+An `exit 0` here is not a success. It means the tool found
+something it was willing to print a table about, and each one has
+to be looked at by hand -- which is what docs/13 does.

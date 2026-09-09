@@ -1,0 +1,122 @@
+archive          : rpgmaker95-dist/RPG-Maker-95_Win_EN_RPG-Maker-95-v102.zip
+file size        : 7120053 bytes
+EOCD at offset   : 7120031  (22 bytes from the end)
+disks            : this 0, cd starts on 0
+entries          : 12 on this disk, 12 total
+central directory: 667 bytes at offset 7119364
+archive comment  : 0 bytes 
+ZIP64 locator    : absent
+central directory read: 667 bytes
+
+members parsed   : 12  (header said 12)
+
+directory entries: 0
+file entries     : 12
+compressed total : 7118889 bytes
+uncompressed tot : 7354728 bytes
+whole-archive ratio: 1.0331 : 1  (saves 3.21 %)
+central dir + eocd + local headers overhead: 1164 bytes
+
+compression methods:
+  deflate    ( 8)      10 files         7354662 ->        7118823  1.033:1
+  stored     ( 0)       2 files              66 ->             66  1.000:1
+
+version made by (upper byte = host system):
+  0x0014  host 0 MS-DOS/FAT    zip spec 2.0   x12
+version needed:
+  2.0  x10
+  1.0  x2
+general purpose flags:
+  0x0002  x12
+extra-field lengths:
+  0 bytes  x12
+
+extensions inside the archive (by uncompressed bytes):
+  .1              1         6621095 ->        6421170   90.03 %  1.03:1
+  .ex_            1          320276 ->         319518    4.35 %  1.00:1
+  .lib            1          280502 ->         278097    3.81 %  1.01:1
+  .ins            1           66661 ->          65837    0.91 %  1.01:1
+  .exe            2           53120 ->          28003    0.72 %  1.90:1
+  .dll            1            6128 ->           3026    0.08 %  2.03:1
+  .pkg            1            4513 ->           1827    0.06 %  2.47:1
+  .txt            1            1967 ->           1169    0.03 %  1.68:1
+  .diz            1             400 ->            176    0.01 %  2.27:1
+  .ini            1              61 ->             61    0.00 %  1.00:1
+  .id             1               5 ->              5    0.00 %  1.00:1
+  ... 11 extensions total
+
+top-level entries inside the archive:
+  _SETUP.1                                      1 files         6621095 bytes
+  _INST32I.EX_                                  1 files          320276 bytes
+  _SETUP.LIB                                    1 files          280502 bytes
+  SETUP.INS                                     1 files           66661 bytes
+  SETUP.EXE                                     1 files           44928 bytes
+  _ISDEL.EXE                                    1 files            8192 bytes
+  _SETUP.DLL                                    1 files            6128 bytes
+  SETUP.PKG                                     1 files            4513 bytes
+  readme.txt                                    1 files            1967 bytes
+  FILE_ID.DIZ                                   1 files             400 bytes
+  SETUP.INI                                     1 files              61 bytes
+  DISK1.ID                                      1 files               5 bytes
+
+second-level entries (first two path components):
+  _SETUP.1                                                1         6621095
+  _INST32I.EX_                                            1          320276
+  _SETUP.LIB                                              1          280502
+  SETUP.INS                                               1           66661
+  SETUP.EXE                                               1           44928
+  _ISDEL.EXE                                              1            8192
+  _SETUP.DLL                                              1            6128
+  SETUP.PKG                                               1            4513
+  readme.txt                                              1            1967
+  FILE_ID.DIZ                                             1             400
+  SETUP.INI                                               1              61
+  DISK1.ID                                                1               5
+  ... 12 distinct
+
+DOS timestamps inside the archive:
+  members with a parseable date: 12 of 12
+  oldest : 1995-09-07 19:22:40
+  newest : 1999-07-12 01:29:08
+  spread : 1403 days, 6:06:28
+  distinct values: 10
+    1999-07-12 01:29:08  x3
+    1995-09-07 19:22:40  x1
+    1996-09-30 08:06:54  x1
+    1999-07-12 01:27:34  x1
+    1999-07-12 00:24:28  x1
+    1999-07-12 00:12:50  x1
+    1996-11-04 13:04:12  x1
+    1999-07-12 01:27:36  x1
+    1996-12-19 17:19:56  x1
+    1996-11-05 16:17:32  x1
+  by month:
+    1995-09  x1
+    1996-09  x1
+    1996-11  x2
+    1996-12  x1
+    1999-07  x7
+
+duplicate content, by (CRC, uncompressed size):
+  distinct (crc,size) pairs: 12
+  pairs appearing more than once: 0
+  members that share a pair with another: 0
+  bytes those duplicates account for (uncompressed): 0
+
+zero-length members: 0
+largest members:
+         6621095 ->        6421170  deflate  _SETUP.1
+          320276 ->         319518  deflate  _INST32I.EX_
+          280502 ->         278097  deflate  _SETUP.LIB
+           66661 ->          65837  deflate  SETUP.INS
+           44928 ->          24228  deflate  SETUP.EXE
+            8192 ->           3775  deflate  _ISDEL.EXE
+            6128 ->           3026  deflate  _SETUP.DLL
+            4513 ->           1827  deflate  SETUP.PKG
+            1967 ->           1169  deflate  readme.txt
+             400 ->            176  deflate  FILE_ID.DIZ
+              61 ->             61  stored   SETUP.INI
+               5 ->              5  stored   DISK1.ID
+
+absolute-looking paths inside member names: 0
+member names containing a backslash: 0

@@ -1,0 +1,42 @@
+LAYER 1 -- THE OBJECT, denominator 1 file
+  local file headers                      475
+  member data                         7118889
+  central directory                       667
+  end-of-central-directory                 22
+  TOTAL                               7120053
+  the file on disk                    7120053
+
+  the ZIP closes against PKWARE's structure                ok    7120053 against 7120053, residue 0
+  the central directory is the length the EOCD declares    ok    667 against 667, residue 0
+
+LAYER 2 -- THE MEMBERS, denominator 12 files
+  extracted bytes                     7354728
+  stored inside the ZIP               7118889
+
+  every member the ZIP declares is on disk                 ok    12 of 12
+
+LAYER 3 -- THE CONTAINERS, denominator 4 of those 12 members
+  _SETUP.1          256 members  255 + 6607311 + 207 + 13322 = 6621095, file 6621095
+      _SETUP.1 closes at residue 0                         ok    6621095 against 6621095, residue 0
+  _SETUP.LIB         11 members  255 + 279651 + 11 + 585 = 280502, file 280502
+      _SETUP.LIB closes at residue 0                       ok    280502 against 280502, residue 0
+  SETUP.INS           1 members  255 + 66343 + 11 + 52 = 66661, file 66661
+      SETUP.INS closes at residue 0                        ok    66661 against 66661, residue 0
+  _INST32I.EX_        4 members  268 + 320008 = 320276, file 320276
+      _INST32I.EX_ closes at residue 0                     ok    320276 against 320276, residue 0
+
+LAYER 4 -- THE PRODUCT, denominator 272 recovered files
+  bytes the entries declare          20442049
+
+  SETUP.PKG's 256 sizes equal _SETUP.1's stored sizes      ok    6607311 against 6607311, residue 0
+  SETUP.PKG names the same 256 files, in the same order    ok    256 of 256
+  _SETUP.1's header declares the sum of its expanded sizes ok    18821193 against 18821193, residue 0
+  SETUP.PKG's group counts equal _SETUP.1's directory counts ok    12 of 12
+
+THE FOUR TOTALS, WHICH ARE NEVER ADDED TOGETHER
+  the object                      7120053 over  1 file
+  the members                     7354728 over 12 files
+  the manifest declares           6607311 over 256 names
+  the product, expanded          20442049 over 272 recovered files
+
+every closure above holds.

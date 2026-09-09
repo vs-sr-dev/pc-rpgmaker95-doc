@@ -1,0 +1,16 @@
+root      : _work/members
+signature : 13 5d 65 8c  (4 bytes)
+
+files searched                       : 12
+files BEGINNING with the signature   : 3 of 12
+   SETUP.INS
+   _SETUP.1
+   _SETUP.LIB
+occurrences ANYWHERE                 : 3, in 3 files
+   SETUP.INS                                                1
+   _SETUP.1                                                 1
+   _SETUP.LIB                                               1
+
+A signature that begins no file and appears inside many is not a
+near miss.  It is a coincidence, and the two counts are printed
+apart so that neither can be quoted as the other.

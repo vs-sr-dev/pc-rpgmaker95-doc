@@ -1,0 +1,120 @@
+############ _work/members/SETUP.EXE
+file            : _work/members/SETUP.EXE
+size            : 44928 bytes
+e_lfanew        : 0xE00
+format          : NE (16-bit New Executable)
+linker version  : 5.60
+target OS       : 2 Windows
+expected Windows: 3.10
+flags           : 0x0302  MULTIPLEDATA
+segments        : 2   module refs: 4   movable entries: 0
+segment align   : 1 << 4 = 16 bytes
+auto data seg   : 2   heap 12024   stack 16096
+entry CS:IP     : 0001:657C
+initial SS:SP   : 0002:0000
+header CRC      : 0x00000000
+
+resident name table (first entry is the module name): 5 entries
+    ord 0     ISSET_SE
+    ord 1     LOGODLGPROC
+    ord 2     BARWNDPROC
+    ord 3     SETUPWNDPROC
+    ord 4     LOGOBWNDPROC
+
+
+############ _work/members/_ISDEL.EXE
+file            : _work/members/_ISDEL.EXE
+size            : 8192 bytes
+e_lfanew        : 0x80
+format          : NE (16-bit New Executable)
+linker version  : 5.60
+target OS       : 2 Windows
+expected Windows: 3.10
+flags           : 0x0302  MULTIPLEDATA
+segments        : 2   module refs: 2   movable entries: 1
+segment align   : 1 << 9 = 512 bytes
+auto data seg   : 2   heap 4096   stack 4096
+entry CS:IP     : 0001:079C
+initial SS:SP   : 0002:0000
+header CRC      : 0x00000000
+
+resident name table (first entry is the module name): 2 entries
+    ord 0     _DELIS
+    ord 1     WNDPROC
+
+non-resident name table (first entry is the module DESCRIPTION): 1 entries
+    ord 0     Deleter Process (c) Stirling Technologies, 1990-1995
+
+
+############ _work/members/_SETUP.DLL
+file            : _work/members/_SETUP.DLL
+size            : 6128 bytes
+e_lfanew        : 0x80
+format          : NE (16-bit New Executable)
+linker version  : 5.60
+target OS       : 2 Windows
+expected Windows: 3.0
+flags           : 0x8301  SINGLEDATA|LIBMODULE
+segments        : 2   module refs: 1   movable entries: 2
+segment align   : 1 << 4 = 16 bytes
+auto data seg   : 2   heap 8192   stack 0
+entry CS:IP     : 0001:008E
+initial SS:SP   : 0000:0000
+header CRC      : 0x00000000
+
+resident name table (first entry is the module name): 3 entries
+    ord 0     _SETUP
+    ord 1     WEP
+    ord 2     ___EXPORTEDSTUB
+
+non-resident name table (first entry is the module DESCRIPTION): 1 entries
+    ord 0     InstallSHIELD Resource DLL (c) Stirling Technologies Inc., 1990-1995
+
+############ _work/inst32/BOOT16.EXE
+file            : _work/inst32/BOOT16.EXE
+size            : 7168 bytes
+e_lfanew        : 0x400
+format          : NE (16-bit New Executable)
+linker version  : 5.60
+target OS       : 2 Windows
+expected Windows: 3.10
+flags           : 0x0302  MULTIPLEDATA
+segments        : 2   module refs: 2   movable entries: 1
+segment align   : 1 << 9 = 512 bytes
+auto data seg   : 2   heap 4096   stack 4096
+entry CS:IP     : 0001:01F8
+initial SS:SP   : 0002:0000
+header CRC      : 0x00000000
+
+resident name table (first entry is the module name): 2 entries
+    ord 0     BOOT16
+    ord 1     WNDPROC
+
+non-resident name table (first entry is the module DESCRIPTION): 1 entries
+    ord 0     InstallSHIELD Bootstrap (c) Stirling Technologies, Inc., 1990-1995
+
+
+############ _work/inst32/LZWSERV.EXE
+file            : _work/inst32/LZWSERV.EXE
+size            : 20656 bytes
+e_lfanew        : 0x400
+format          : NE (16-bit New Executable)
+linker version  : 5.60
+target OS       : 2 Windows
+expected Windows: 3.0
+flags           : 0x0302  MULTIPLEDATA
+segments        : 2   module refs: 2   movable entries: 0
+segment align   : 1 << 4 = 16 bytes
+auto data seg   : 2   heap 10240   stack 8192
+entry CS:IP     : 0001:1E8C
+initial SS:SP   : 0002:0000
+header CRC      : 0x00000000
+
+resident name table (first entry is the module name): 1 entries
+    ord 0     LZWSERV
+
+non-resident name table (first entry is the module DESCRIPTION): 2 entries
+    ord 0     InstallSHIELD (C) Stirling Technologies, Inc., 1990 - 1993
+    ord 10    LZWSERWNDPROC
+
+

@@ -1,0 +1,88 @@
+manifest        : _work/members/SETUP.PKG
+file length     : 4513 bytes
+leading u32     : 0x118BA34A   (low half 0xA34A is constant; high half 4491 is +0x0A plus 14 on both specimens: yes)
+header unknowns : 0 2 0 4477 0
+group count     : 12   (declared and parsed)
+group table     : offsets 16 .. 127
+file count      : 256   (declared and parsed)
+pad after count : 0
+record table    : offsets 131 .. 4493
+walk ended      : 20 bytes from the end of the file
+declared bytes  : 6607311   (the sum of 256 u32 size fields)
+
+trailer, verbatim, 20 bytes:
+  hex   01 00 01 00 08 00 5f 53 45 54 55 50 2e 5a 01 01 0a 00 00 00
+  ascii ......_SETUP.Z......
+
+groups, as named in the group table:
+  Group1 Group2 Group3 Group4 Group5 Group6 Group7 Group8 Group9 Group10 Group11 Group12
+
+by group index:
+  idx   name        files          bytes
+  0     Group1          5        1685197
+  1     Group2         12         367610
+  2     Group3          5         429213
+  3     Group4          2         299597
+  4     Group5          1         112888
+  5     Group6         20        1991354
+  6     Group7        103         214666
+  7     Group8         54         775534
+  8     Group9         42         182314
+  9     Group10         1           7404
+  10    Group11         9         541298
+  11    Group12         2            236
+        TOTAL         256        6607311
+
+by extension:
+  ext       files          bytes
+  MID         102         137063
+  BMP          75        2393372
+  WAV          55         778175
+  DAT           8         367081
+  EXE           4        1030026
+  TXT           4           1710
+  ATR           4            284
+  DLL           2         119504
+  HLP           2        1780096
+  TOTAL       256        6607311
+
+names appearing more than once : 3
+  NOSOUND.WAV          x2  sizes [52]  groups [6, 7]
+  README.TXT           x4  sizes [73, 163, 172, 1302]  groups [1, 10, 11, 11]
+  RPG95.HLP            x2  sizes [890048]  groups [0, 5]
+
+what the unnamed header integers land on:
+  +0x04       0   not an offset into this file
+  +0x06       2   inside the file, 4511 bytes from the end
+  +0x08       0   not an offset into this file
+  +0x0A    4477   the end of the record table minus the sixteen-byte header
+  +0x0C       0   not an offset into this file
+
+first 12 of 256 records:
+       #         size group  name
+       0       493551     0  rpg95.exe
+       1        98281     0  unlha32.dll
+       2       890048     0  rpg95.hlp
+       3        21223     0  USER32.DLL
+       4         1302     1  readme.txt
+       5         4163     1  CHARA.DAT
+       6          604     1  EPARTY.DAT
+       7           93     1  EVE99999.DAT
+       8         1198     1  ITEM.DAT
+       9         1091     1  MAGIC.DAT
+      10          113     1  MCHIP0.ATR
+      11           61     1  MCHIP1.ATR
+
+largest ten of 256:
+        890048     0  rpg95.hlp
+        890048     5  rpg95.hlp
+        493551     0  rpg95.exe
+        358271     1  MONSTPIC.DAT
+        241493     3  game.exe
+        182094     0  game_engl_123.exe
+        147734     2  chara.bmp
+        130057     2  MCHIP0.BMP
+        116044     5  BG16.BMP
+        112888     4  SETUP.EXE
+
+wrote notes/setup-pkg.tsv -- 256 rows

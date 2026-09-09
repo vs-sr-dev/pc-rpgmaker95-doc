@@ -1,0 +1,131 @@
+archive     : ../pc-clic11-doc/_work/iso/FP98/DATA.Z   20986319 bytes
+declared    : 2399 files in 108 directories
+
+directories:
+  idx   files  chunk  name
+  0         6     19  artgalry
+  1         3     23  bots\fpcount
+  2        33     21  client_bin
+  3        11     25  client_bin\ita
+  4         3     25  client_selfreg
+  5       198     24  clipart\clip1
+  6      1246     24  clipart\clip2
+  7         2     32  content_nodoc\cgi-bin
+  8         2     41  content_nodoc\cgi-bin\_vti_cnf
+  9         5     21  defaultweb
+  10        3     28  defaultweb\images
+  11        2     30  defaultweb\_borders
+  12        8     30  defaultweb\_overlay
+  13       45     36  defaultweb\_themes\global
+  14        2     30  defaultweb\_vti_pvt
+  15       17     18  ext_bin
+  16        1     22  ext_bin\ita
+  17        1     25  ext_client_bin
+  18        1     25  ext_client_win
+  19        2     18  ext_win
+  20       28     16  fonts
+  21        6     18  fpclass
+  22        2     28  frames\bantoc.tem
+  23        2     28  frames\footer.tem
+  24        2     30  frames\footnote.tem
+  25        2     28  frames\header.tem
+  26        2     30  frames\horzsplt.tem
+  27        2     29  frames\navwtoc.tem
+  28        2     30  frames\threelev.tem
+  29        2     25  frames\toc.tem
+  30        2     29  frames\topdown.tem
+  31        2     30  frames\vertsplt.tem
+  32       14     24  htmladmin\cgi
+  33        1     32  htmladmin\cgi\scripts
+  34       14     26  htmladmin\isapi
+  35        1     34  htmladmin\isapi\scripts
+  36        1     23  httpd_common
+  37        4     28  httpd_common\conf
+  38       12     29  httpd_common\icons
+  39        1     21  httpd_stub
+  40        1     17  images
+  41        2     25  isapi\_vti_bin
+  42        1     34  isapi\_vti_bin\_vti_adm
+  43        1     34  isapi\_vti_bin\_vti_aut
+  44        3     28  pages\1center.tem
+  45        3     28  pages\1cheads.tem
+  46        4     27  pages\1cleft.tem
+  47        4     28  pages\1cright.tem
+  48        3     27  pages\2ceven.tem
+  49        4     28  pages\2cmenul.tem
+  50        4     28  pages\2cmenur.tem
+  51        7     28  pages\2cstagr.tem
+  52        4     29  pages\3c2stagl.tem
+  53        3     27  pages\3ceven.tem
+  54        4     28  pages\3cmenuc.tem
+  55        4     28  pages\3cmenul.tem
+  56        6     29  pages\3csidbar.tem
+  57        3     29  pages\4ccenter.tem
+  58        3     28  pages\4cstagc.tem
+  59        4     28  pages\4cstagl.tem
+  60        3     27  pages\biblio.tem
+  61        3     28  pages\confirm.tem
+  62        3     24  pages\faq.tem
+  63        3     29  pages\feedback.tem
+  64        3     29  pages\fpcdfwiz.wiz
+  65        3     29  pages\fpidcwiz.wiz
+  66        4     28  pages\guestbk.tem
+  67        3     27  pages\normal.tem
+  68        3     28  pages\reguser.tem
+  69        3     27  pages\search.tem
+  70        3     24  pages\toc.tem
+  71        2     28  pages\vtiform.wiz
+  72        2     18  samples
+  73       15     15  serk
+  74       19     22  serk\images
+  75        4     19  servsupp
+  76        3     26  serv_client_bin
+  77        1     30  serv_client_bin\ita
+  78        3     24  shared\forms3
+  79        8     25  shared\grphflt
+  80        9     26  shared\textconv
+  81       23     24  system_common
+  82        5     31  system_common\msinfo
+  83        2     23  system_win95
+  84        1     23  system_winnt
+  85        1     17  themes
+  86       36     22  themes\arcs
+  87       45     26  themes\construc
+  88       45     26  themes\expeditn
+  89       45     24  themes\global
+  90       45     26  themes\inmotion
+  91       45     24  themes\nature
+  92       45     26  themes\sumipntg
+  93        4     19  tutorial
+  94       23     28  webs\custsupp.tem
+  95        2     35  webs\custsupp.tem\images
+  96        1     25  webs\empty.tem
+  97        2     28  webs\msimport.wiz
+  98        2     26  webs\normal.tem
+  99        7     28  webs\personal.tem
+  100       3     35  webs\personal.tem\images
+  101      27     27  webs\project.tem
+  102       4     34  webs\project.tem\images
+  103      29     27  webs\vtidisc.wiz
+  104      92     27  webs\vtipres.wiz
+  105       2     19  _vti_bin
+  106       1     28  _vti_bin\_vti_adm
+  107       1     28  _vti_bin\_vti_aut
+
+  the members' offsets chain with no gap and no overlap      ok     2399 of 2399 members begin where the previous one ended
+  the last member ends exactly at the directory table        ok     last member ends at 20852252, the directory table begins at 20852252
+  header + data + both tables = the archive, residue 0       ok     255 + 20851997 + 2852 + 131215 = 20986319 against 20986319, residue 0
+  the directory file counts sum to the header's file count   ok     2399 against 2399
+
+stored bytes   : 20851997
+expanded field : 48823387
+entries whose expanded field is BELOW the stored size : 1458 of 2399
+
+first 6 of 2399 entries:
+      #     stored   expanded     offset   vol date       time     name
+      0       1266       4069        255     0 1997-07-29 14:50:58 artgalry.cnt
+      1      22622      44032       1521     0 1997-07-29 14:50:58 artgalry.exe
+      2      28100      54770      24143     0 1997-07-29 14:50:58 artgalry.hlp
+      3       1832       7358      52243     0 1997-07-29 14:50:58 artgalry.srg
+      4       8139      16715      54075     0 1997-07-29 14:50:58 qartglry.hlp
+      5        131        118      62214     0 1997-07-29 14:50:58 www_clip.url

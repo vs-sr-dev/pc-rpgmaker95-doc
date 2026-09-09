@@ -1,0 +1,16 @@
+archive        : _work/members/_SETUP.1
+members tried  : 256 of 256
+EXPANDED LENGTH MATCHES THE DECLARED FIELD : 256 of 256
+refused or mismatched                      : 0 of 256
+
+first two bytes of the expanded members:
+  'MT'   MT     102
+  'BM'   BM     75
+  'RI'   RI     55
+  'MZ'   MZ     6
+  '\x00\x00' ..     3
+  '=='   ==     3
+  '?_'   ?_     2
+  '\x0c\x0c' ..     2
+  '\t='  .=     1
+  '\x03\x00' ..     1

@@ -1,0 +1,21 @@
+root                : _work/members
+blobs searched      : 12   (12 of 12 -- nothing was filtered out)
+bytes searched      : 7354728
+chance rate in this haystack, per needle width:
+    2 bytes      112.224243 expected occurrences
+    4 bytes        0.001712 expected occurrences
+    6 bytes        0.000000 expected occurrences
+    8 bytes        0.000000 expected occurrences
+
+pattern                                hits    blobs
+------------------------------------------------------
+drive-letter path                         1        1
+unix build path                           0        0
+CONTROL must-hit (none derivable)      1253        7
+CONTROL must-miss 'zzqxjvwk'              0        0
+------------------------------------------------------
+positive control fired : YES (1253 hits)
+negative control quiet : YES
+
+=== drive-letter path ===
+    _ISDEL.EXE                                           x1     b'c:\\stopthis.now'
